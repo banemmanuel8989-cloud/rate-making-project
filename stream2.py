@@ -19,7 +19,7 @@ st.markdown("""
 
 # 2. Sidebar: Inputs (The "Controls")
 st.sidebar.header("📋 Policy Setup")
-RATES = {"8810": 0.45, "8824": 3.50, "8825": 2.65, "5183": 5.12}
+RATES = {"8810": 0.45, "8824": 3.50, "8825": 2.65}
 selected_code = st.sidebar.selectbox("Class Code", list(RATES.keys()))
 payroll = st.sidebar.number_input("Annual Payroll ($)", min_value=0.0, value=100000.0, step=1000.0)
 exp_mod = st.sidebar.number_input("Experience Mod Factor", min_value=0.0, value=1.00, step=0.01)
